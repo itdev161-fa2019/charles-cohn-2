@@ -39,7 +39,7 @@ const res = await axios.post('http://localhost:5000/api/login', body, config);
 
 // Store user data and redirect
 localStorage.setItem('token', res.data.token);
-history.pushState('/')
+history.push('/')
 
 } catch (error) {
     // Clear user data
